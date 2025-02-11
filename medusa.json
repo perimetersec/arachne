@@ -1,0 +1,36 @@
+{
+	"fuzzing": {
+		"workers": 1,
+		"corpusDirectory": "medusa-corpus",
+		"coverageEnabled": true,
+		"deploymentOrder": [
+			"Fuzz"
+		],
+		"targetContracts": [
+			"Fuzz"
+		],
+		"deployerAddress": "0xfffff",
+		"senderAddresses": [
+			"0x10000",
+			"0x20000",
+			"0x30000"
+		],
+		"chainConfig": {
+			"codeSizeCheckDisabled": true,
+			"cheatCodes": {
+				"cheatCodesEnabled": true
+			}
+		}
+	},
+	"compilation": {
+		"platform": "crytic-compile",
+		"platformConfig": {
+			"target": ".",
+			"solcVersion": "",
+			"exportDirectory": "",
+			"args": [
+				"--foundry-compile-all"
+			]
+		}
+	}
+}

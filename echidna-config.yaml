@@ -1,0 +1,11 @@
+workers: 1
+
+testMode: assertion
+
+prefix: echidna_
+corpusDir: echidna-corpus
+
+deployer: "0xfffff"
+sender: ["0x10000", "0x20000", "0x30000"]
+
+cryticArgs: ["--foundry-compile-all"]
